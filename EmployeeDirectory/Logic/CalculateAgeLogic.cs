@@ -1,8 +1,8 @@
-﻿namespace EmployeeDirectory
+﻿namespace EmployeeDirectory.Logic
 {
-    public static class CalculateAge
+    public class CalculateAgeLogic : ICalculateAgeLogic
     {
-        public static int CalculateAgeEmployee(DateTime birthDate)
+        public int CalculateAgeEmployee(DateTime birthDate)
         {
             int age = DateTime.Today.Year - birthDate.Year;
 
